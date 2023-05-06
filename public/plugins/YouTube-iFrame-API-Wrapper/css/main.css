@@ -1,0 +1,91 @@
+.video-container {
+  /*max-width: 640px;*/
+  position: relative;
+  margin: 0 auto; }
+  .video-container .thumb, .video-container .iframe, .video-container .play,
+  .video-container .sound, .video-container .preload, .video-container .mask {
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0; }
+  .video-container .thumb {
+    z-index: 1;
+    background-position: 50%;
+    background-size: cover; }
+  .video-container .mask {
+    display: block;
+    z-index: 4;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .video-container .playing .mask {
+    background-color: transparent; }
+  .video-container .play, .video-container .sound {
+    z-index: 4;
+    cursor: pointer;
+    background-image: url("../img/icons.png"); }
+  .video-container .play {
+    width: 80px;
+    height: 80px; }
+  .video-container .sound {
+    width: 25px;
+    height: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    background-position: 0 -81px; }
+  .video-container .muted .sound {
+    background-position: 105px -81px; }
+  .video-container .preload {
+    z-index: 5;
+    width: 32px;
+    height: 32px;
+    display: block; }
+  .video-container .progress {
+    height: 15px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #f5f5f5; }
+    .video-container .progress .progress-bar, .video-container .progress .buffer-bar {
+      background-color: #E62117;
+      float: left;
+      width: 0%;
+      height: 100%;
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+      text-align: center; }
+    .video-container .progress .buffer-bar {
+      position: absolute;
+      z-index: -1;
+      background-color: #f6a5a0; }
+
+/**
+ * Remove everything below this if you
+ * are using Bootstrap.
+ */
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
+  .embed-responsive .embed-responsive-item, .embed-responsive .video-container .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0; }
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,8 @@
+build
+vendor
+.DS_Store
+composer.lock
+.idea
+src/Rave3.php
+clover.xml
+.phpunit.result.cache

@@ -1,0 +1,62 @@
+.form .form-bordered .form-group > div {
+    padding: 15px;
+    border-left: 1px solid #efefef;
+}
+
+
+.fileinput {
+    margin-bottom: 0;
+}
+.fileinput {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+
+
+.fileinput .thumbnail {
+    display: inline-block;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd!important;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+
+.red.btn {
+    color: #FFFFFF;
+    background-color: #cb5a5e;
+}
+.btn + .btn {
+    margin-left: 5px;
+}
+.fileinput-exists .fileinput-new, .fileinput-new .fileinput-exists {
+    display: none;
+}
+.fileinput .btn {
+    vertical-align: middle;
+}
+.btn {
+    border-width: 0;
+    padding: 7px 14px;
+    font-size: 14px;
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+}

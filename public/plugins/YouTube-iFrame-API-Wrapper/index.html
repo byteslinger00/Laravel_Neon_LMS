@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>YouTube iFrame API Wrapper</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div class="video-container" id="ShUyfk4QB-8">
+            <div class="embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+
+                    <div class="mask"></div>
+                    <img src="img/preload.gif" class="preload">
+
+                    <div class="play"></div>
+
+                    <div class="sound"></div>
+
+                    <img class="thumb" src="http://img.youtube.com/vi/ShUyfk4QB-8/maxresdefault.jpg">
+                    <div class="iframe" id="video-ShUyfk4QB-8"></div>
+
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar"></div>
+                <div class="buffer-bar"></div>
+            </div>
+        </div>
+
+        <script src="//www.youtube.com/iframe_api"></script>
+        <script src="Player.js"></script>
+
+        <script>
+            function onYouTubeIframeAPIReady() {
+                (new Player).init({
+                    id: 'ShUyfk4QB-8',
+                    onLoaded: function(player) {
+                        player.preload.style.display = 'none';
+                        player.playButton.style.display = 'block';
+                        player.soundButton.style.display = 'block';
+                    },
+                    onPlay: function(player) {
+                        player.playButton.style.display = 'none';
+                    },
+                    onPlaying: function(player) {},
+                    onPause: function(player) {
+                        player.playButton.style.display = 'block';
+                    },
+                    onMute: function(player) {},
+                    onUnMute: function(player) {},
+                    onEnd: function(player) {
+                        player.playButton.style.display = 'block';
+                    },
+                    onSeekStart: function(player) {},
+                    onSeeking: function(player) {},
+                    onSeekEnd: function(player) {}
+                });
+            }
+        </script>
+    </body>
+</html>

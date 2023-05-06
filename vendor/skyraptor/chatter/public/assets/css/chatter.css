@@ -1,0 +1,110 @@
+section.forum .category-nav ul {
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+
+section.forum .category-nav ul li {
+  padding-left: calc(1.5rem - 2px);
+  border-left: 2px solid #1F1F1F;
+}
+
+section.forum .category-nav ul li a {
+  display: flex;
+  align-items: center;
+}
+
+section.forum .category-nav ul li a .chatter-box {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+section.forum .discussions .discussion,
+section.forum .discussions .post,
+section.forum .posts .discussion,
+section.forum .posts .post {
+  background-color: #121212;
+  border-top: 5px solid #1F1F1F;
+}
+
+section.forum .discussions .discussion .left .avatar img,
+section.forum .discussions .post .left .avatar img,
+section.forum .posts .discussion .left .avatar img,
+section.forum .posts .post .left .avatar img {
+  border: 5px solid #060606;
+}
+
+section.forum .discussions .discussion .right,
+section.forum .discussions .post .right,
+section.forum .posts .discussion .right,
+section.forum .posts .post .right {
+  border-left: 5px solid #1F1F1F;
+}
+
+section.forum .discussions .discussion .right .content .title h3,
+section.forum .discussions .post .right .content .title h3,
+section.forum .posts .discussion .right .content .title h3,
+section.forum .posts .post .right .content .title h3 {
+  font-size: 1.3reM;
+  color: #FFFFFF;
+  transition: color 0.15s ease;
+}
+
+section.forum .discussions .discussion .right .content .details span > span,
+section.forum .discussions .post .right .content .details span > span,
+section.forum .posts .discussion .right .content .details span > span,
+section.forum .posts .post .right .content .details span > span {
+  transition: color 0.15s ease;
+}
+
+section.forum .discussions a.discussion:hover,
+section.forum .posts a.discussion:hover {
+  text-decoration: none;
+}
+
+section.forum .discussions a.discussion:hover .right .content .title h3,
+section.forum .posts a.discussion:hover .right .content .title h3 {
+  color: yellow;
+}
+
+section.forum .discussions a.discussion:hover .right .content .details span > span,
+section.forum .posts a.discussion:hover .right .content .details span > span {
+  color: #FFFFFF;
+}
+
+section.forum .discussions .post.editing .right .content .main .body,
+section.forum .posts .post.editing .right .content .main .body {
+  display: none;
+}
+
+section.forum .discussions .post.editing .right .actions .chatter_post_actions,
+section.forum .posts .post.editing .right .actions .chatter_post_actions {
+  display: none !important;
+}
+
+section.forum .discussions .post.editing .right .actions .chatter_update_actions,
+section.forum .posts .post.editing .right .actions .chatter_update_actions {
+  display: block !important;
+}
+
+section.forum .pagination .page-item .page-link {
+  color: #FFFFFF;
+  background-color: #121212;
+  border-color: #1F1F1F;
+}
+
+section.forum .pagination .page-item.disabled .page-link {
+  color: #cccccc;
+}
+
+section.forum .pagination .page-item.active .page-link {
+  color: #FFFFFF;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+section.discussion-header h1 {
+  font-size: 1.75rem;
+}
+

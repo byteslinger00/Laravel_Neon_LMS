@@ -1,0 +1,44 @@
+/* td input{
+  background-color:#555;
+  color:#f0f0f0!important;
+  border-bottom:1px solid #444;
+  background:-webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.39, rgb(85,85,85)),
+      color-stop(0.7, rgb(105,105,105))
+      );
+  background:-moz-linear-gradient(
+      center bottom,
+      rgb(85,85,85) 39%,
+      rgb(105,105,105) 70%
+      );
+  text-shadow:1px 1px 1px #000;
+} */
+
+.head{
+  background-color:#444;
+  color:#000!important;
+  border-bottom:1px solid #444;
+  background:-webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.39, rgb(189,189,189)),
+      color-stop(0.7, rgb(224,224,224))
+      );
+  background:-moz-linear-gradient(
+      center bottom,
+      rgb(189,189,189) 39%,
+      rgb(224,224,224) 70%
+      );
+  text-shadow:1px 1px 1px #fff;
+  
+  border-bottom-right-radius:5px!important;
+} 
+.empty-cell{
+  background:transparent!important;
+  border:none!important;
+}
+

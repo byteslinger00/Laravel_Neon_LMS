@@ -1,0 +1,48 @@
+{
+    "name":        "arcanedev/php-html",
+    "description": "A simple way to create html tags with php.",
+    "homepage":    "https://github.com/ARCANEDEV/php-html",
+    "keywords":    ["arcanedev", "html", "form", "tags"],
+    "authors":     [
+        {
+            "name":     "ARCANEDEV",
+            "email":    "arcanedev.maroc@gmail.com",
+            "homepage": "https://github.com/arcanedev-maroc",
+            "role":     "Developer"
+        }
+    ],
+    "type":    "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "ext-dom": "*",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arcanedev\\Html\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arcanedev\\Html\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "coverage": "phpunit --coverage-html build/coverage/html"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "5.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
